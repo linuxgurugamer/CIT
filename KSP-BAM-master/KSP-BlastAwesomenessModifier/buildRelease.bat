@@ -22,7 +22,7 @@ set HOMEDRIVE=%HOMEDIR:~0,2%
 )
 
 set VERSIONFILE=a.version
-copy D:\Users\jbb\github\Marce\GameData\CIT\BAM\BAM.version a.version
+copy D:\Users\jbb\github\CIT\GameData\CIT\BAM\BAM.version a.version
 rem The following requires the JQ program, available here: https://stedolan.github.io/jq/download/
 c:\local\jq-win64  ".VERSION.MAJOR" %VERSIONFILE% >tmpfile
 set /P major=<tmpfile
@@ -39,11 +39,11 @@ del tmpfile
 set VERSION=%major%.%minor%.%patch%
 if "%build%" NEQ "0"  set VERSION=%VERSION%.%build%
 
-type a.version
+
 
 echo Version:  %VERSION%
 del a.version
-pause
+
 copy bin\Release\BAM.dll ..\..\GameData\CIT\BAM\Plugins
 cd ../..
 
