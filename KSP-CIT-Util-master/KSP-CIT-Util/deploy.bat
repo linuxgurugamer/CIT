@@ -1,4 +1,4 @@
 ﻿
 
-copy bin\Debug\CITUtil.dll ..\..\GameData\CIT
+copy bin\Debug\CITUtil.dll ..\..\GameData\CIT\
 
