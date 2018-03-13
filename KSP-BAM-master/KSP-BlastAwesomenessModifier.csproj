@@ -47,6 +47,7 @@
     <Compile Include="ModuleBAMDebug.cs" />
     <Compile Include="ModuleCustomBAM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -83,12 +84,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\KSP-CIT-Util-master\KSP-CIT-Util\KSP-CIT-Util.csproj">
-      <Project>{d4572eb5-9208-4076-9084-25da25f4c9e2}</Project>
-      <Name>KSP-CIT-Util</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>
@@ -97,10 +92,10 @@ set textTemplatingPath="%25ProgramFiles(x86)%25\Microsoft Visual Studio\2017\Com
 %25textTemplatingPath%25 "$(ProjectDir)AssemblyVersion.tt"</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>start /D D:\Users\jbb\github\CIT\KSP-BAM-master\KSP-BlastAwesomenessModifier /WAIT deploy.bat
+    <PostBuildEvent>start /D D:\Users\jbb\github\CIT  /WAIT deploy.bat  $(TargetDir) $(TargetFileName)
 
 if $(ConfigurationName) == Release (
-start /D D:\Users\jbb\github\CIT\KSP-BAM-master\KSP-BlastAwesomenessModifier  /WAIT buildRelease.bat
+start /D D:\Users\jbb\github\CIT  /WAIT buildRelease.bat  $(TargetDir) $(TargetFileName)
 )
 </PostBuildEvent>
   </PropertyGroup>
