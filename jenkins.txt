@@ -27,7 +27,7 @@
 1:BAM, BAM.version
 
 # 2:PROJNAME, PROJFILE, VERSIONFILE, PLUGINSFOLDER
-2:KSP-BAM-Master,KSP-BAM-Master/KSP-BlastAwesomenessModifier.csproj,BAM.version,GameData/BAM/Plugins
+2:KSP-BAM-master,KSP-BAM-master/KSP-BlastAwesomenessModifier.csproj,BAM.version,GameData/BAM/Plugins
 
 # 3:SOURCEFILE, DESTDIR
 3:BAM.version,GameData/BAM
