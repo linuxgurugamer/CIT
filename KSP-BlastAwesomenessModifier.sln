@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSP-BlastAwesomenessModifier", "KSP-BlastAwesomenessModifier.csproj", "{8A15664F-B5FC-4A8D-BECE-D968D84B92C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSP-BlastAwesomenessModifier", "KSP-BAM-Master\KSP-BlastAwesomenessModifier.csproj", "{8A15664F-B5FC-4A8D-BECE-D968D84B92C8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AA3FE987-3523-4BA6-9085-D609ACACFB61}"
 	ProjectSection(SolutionItems) = preProject
-		..\BAM.version = ..\BAM.version
-		..\buildRelease.bat = ..\buildRelease.bat
-		..\deploy.bat = ..\deploy.bat
-		..\jenkins.txt = ..\jenkins.txt
-		..\README.md = ..\README.md
+		BAM.version = BAM.version
+		buildRelease.bat = buildRelease.bat
+		deploy.bat = deploy.bat
+		jenkins.txt = jenkins.txt
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global

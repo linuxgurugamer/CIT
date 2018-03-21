@@ -13,23 +13,23 @@ namespace CIT_BlastAwesomenessModifier
         public static List<T> GetAllModulesInLoadRange<T>(string moduleName, Func<PartModule, T> convFunc) where T : class
         {
             var moduleList = new List<T>();
-            if (!HighLogic.LoadedSceneIsFlight)
+            if (HighLogic.LoadedSceneIsEditor)
             {
-                if (HighLogic.LoadedSceneIsEditor)
-                {
-                    moduleList = EditorLogic.fetch.ship.Parts.Where(part => part.Modules.Contains(moduleName))
-                                            .Select(part => convFunc(part.Modules[moduleName]))
-                                            .ToList();
-                }
-                return moduleList;
+                moduleList = EditorLogic.fetch.ship.Parts.Where(part => part.Modules.Contains(moduleName))
+                                        .Select(part => convFunc(part.Modules[moduleName]))
+                                        .ToList();
             }
-            moduleList = FlightGlobals.Vessels.Where(v => v.loaded)
+            if (HighLogic.LoadedSceneIsFlight)
+            {
+                moduleList = FlightGlobals.Vessels.Where(v => v.loaded)
                                       .Where(v => v.Parts.Any(p => p.Modules.Contains(moduleName)))
                                       .SelectMany(v => v.Parts)
                                       .Where(part => part.Modules.Contains(moduleName))
                                       .Select(part => convFunc(part.Modules[moduleName]))
                                       .ToList();
+            }
             return moduleList;
+
         }
 
         public static List<Part> GetAllModulesInLoadRange(Func<Part, bool> filterFunc = null)

@@ -1,25 +1,21 @@
 {
   "NAME": "BAM",
-  "URL": "http://ksp-avc.cybutek.net/version.php?id=445",
+  "URL": "https://raw.githubusercontent.com/linuxgurugamer/CIT/master/BAM.version",
+  "DOWNLOAD" : "https://github.com/linuxgurugamer/CIT/releases",
+  "GITHUB" :
+  {
+      "USERNAME" : "linuxgurugamer",
+      "REPOSITORY" : "CIT"
+  },
   "VERSION": {
     "MAJOR": 1,
     "MINOR": 3,
-    "PATCH": 1,
-    "BUILD": 1
+    "PATCH": 2,
+    "BUILD": 0
   },
   "KSP_VERSION": {
     "MAJOR": 1,
-    "MINOR": 3,
-    "PATCH": 1
-  },
-  "KSP_VERSION_MIN": {
-    "MAJOR": 1,
-    "MINOR": 3,
-    "PATCH": 1
-  },
-  "KSP_VERSION_MAX": {
-    "MAJOR": 1,
-    "MINOR": 3,
+    "MINOR": 4,
     "PATCH": 1
   }
 }
