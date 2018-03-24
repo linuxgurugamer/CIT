@@ -29,7 +29,7 @@
 
 	var projectPath = Host.ResolveAssemblyReference("$(ProjectDir)");
 
-	string versionfile =   @"D:\Users\jbb\github\CIT\GameData\BAM\BAM.version";
+	string versionfile =   @"D:\Users\jbb\github\CIT\BAM.version";
 
 	if (!File.Exists(versionfile))
 	{

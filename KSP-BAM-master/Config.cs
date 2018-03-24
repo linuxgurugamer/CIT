@@ -6,7 +6,7 @@ namespace CIT_BlastAwesomenessModifier
     public class Config
     {
         // ReSharper disable once InconsistentNaming
-        private const string _configFilePath = "GameData/CIT/BAM/PluginData/BAM.cfg";
+        private const string _configFilePath = "GameData/BAM/PluginData/BAM.cfg";
         private const string SettingsNodeName = "CIT_BAM_SETTINGS";
         private static Config _instance;
 
