@@ -1,6 +1,6 @@
 {
   "NAME": "BAM",
-  "URL": "http//ksp.spacetux.net/avc/BAM",
+  "URL": "http://ksp.spacetux.net/avc/BAM",
   "DOWNLOAD" : "https://github.com/linuxgurugamer/CIT/releases",
   "GITHUB" :
   {
@@ -11,7 +11,7 @@
     "MAJOR": 1,
     "MINOR": 3,
     "PATCH": 2,
-    "BUILD": 3
+    "BUILD": 4
   },
   "KSP_VERSION": {
     "MAJOR": 1,

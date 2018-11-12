@@ -13,3 +13,6 @@ BAM
 
 1.3.2.3
 	Version bump for 1.5 rebuild
+	
+1.3.2.4
+	Fixed typo in .version file
