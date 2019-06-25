@@ -16,3 +16,7 @@ BAM
 	
 1.3.2.4
 	Fixed typo in .version file
+
+1.3.2.6
+	Version bump for 1.7.2
+	Updated AssemblyVersion to be location independent
