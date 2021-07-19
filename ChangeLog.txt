@@ -35,4 +35,4 @@ ChangeLog
 1.3.3.4
 	Updated version file for KSP 1.12
 	Added AssemblyFileVersion
-
+	Updated DLL name for better CKAN compatibility
